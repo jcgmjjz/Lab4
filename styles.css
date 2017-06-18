@@ -1,0 +1,94 @@
+
+/* ============================================================== *
+ *               BEGIN MY CSS                                     *
+ * ============================================================== */
+#planet-comparison-body {
+  background-color: #4169E1;  /* royalblue */
+}
+
+img {
+  width: 100%;
+  margin: 0 auto;
+}
+
+#table-title {
+  text-align: center;
+  font-family: 'Michroma', sans-serif;
+  font-size: 200%;
+  background-color: #4169E1;  /* royalblue */
+  margin-top: 50px;
+  margin-bottom: 10px;
+}
+
+/* Adds a horizontal scroll bar if the size of the page becomes too small. Not
+ * too useful
+ */
+#table-div {
+  overflow-x:auto;
+}
+
+#planet-comparison-table {
+  border: 2px solid white;
+  text-align: center;
+  width: 100%;
+  max-width: 960px;
+  table-layout: fixed;
+  /*border-collapse:collapse;*/
+  margin: 0 auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+th {
+  border: 2px solid white;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  height: 60px;
+  background-color: #00008B; /* darkblue */
+  color: white;
+  padding: 10px;
+}
+
+td {
+  border: 1px solid white;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  text-align: center;
+  /*background-color: #0000FF;  blue */
+  background-color: #0000ff;
+  color: white;
+  padding: 10px;
+}
+
+/* These next 2 rules will provide alternate color rows and then change
+   the color to a third color when you hover. It doesn't make sense
+   to use both but I got them to work so I left it in the css.
+*/
+/*tr:nth-child(even) td{background-color: #4169e1}*/
+
+/* When you hover over a row change the background color to powder blue
+ * for each cell in the row, change the border and the text to black,
+ * better contrast with powder blue background.
+ */
+tr:hover td{
+  background-color: #b0e0e6; /* powderblue */
+  border: 2px solid black;
+  color: black;
+}
+
+/* In the table each superscript is on it's own line. No need\
+ * to assure that it doesn't push the line above up. Use 100% font
+ * size for readability.
+ */
+sup {
+  font-size: 100%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -0.7em;
+}
+          
