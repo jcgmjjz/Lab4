@@ -13,7 +13,7 @@ img {
 
 #table-title {
   text-align: center;
-  font-family: 'Michroma', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 200%;
   background-color: #4169E1;  /* royalblue */
   margin-top: 50px;
@@ -56,7 +56,7 @@ td {
   font-size: 15px;
   text-align: center;
   /*background-color: #0000FF;  blue */
-  background-color: #0000ff;
+  background-color: #1a1aff;
   color: white;
   padding: 10px;
 }
@@ -65,7 +65,7 @@ td {
    the color to a third color when you hover. It doesn't make sense
    to use both but I got them to work so I left it in the css.
 */
-/*tr:nth-child(even) td{background-color: #4169e1}*/
+tr:nth-child(even) td{background-color: #3333ff}
 
 /* When you hover over a row change the background color to powder blue
  * for each cell in the row, change the border and the text to black,
